@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ODONTO PRIME — Odontologia de excelência, implantes, ortodontia, lentes de contato dental e harmonização orofacial.">
+  <link rel="shortcut icon" href="dente-favicon.png" type="image/x-icon">
+  <title>ODONTO PRIME | Odontologia de Excelência e Tecnologia</title>
+  
+  <!-- Tipografia Google Fonts: Manrope & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cursor Personalizado (Desktop) -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true"></div>
+
+  <!-- Barra de Progresso de Leitura -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- 1. HEADER FIXO -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Odonto Prime Início">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.5 6C8.5 6 5.5 9.2 5.5 13.8C5.5 19.5 8.2 24.5 10.2 31.2C11.1 34.2 13.8 34.5 15.1 31.6L18.2 24.5C19 22.8 21 22.8 21.8 24.5L24.9 31.6C26.2 34.5 28.9 34.2 29.8 31.2C31.8 24.5 34.5 19.5 34.5 13.8C34.5 9.2 31.5 6 27.5 6C24.5 6 22.2 7.6 20 7.6C17.8 7.6 15.5 6 12.5 6Z" stroke="#102A43" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 12.5C13.5 11.2 15.8 11.2 17.5 12.2" stroke="#3B82F6" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">ODONTO</span>
+          <span class="logo-subtitle">PRIME</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="#especialidades" class="nav-link">Especialidades</a>
+        <a href="#sobre" class="nav-link">A Clínica</a>
+        <a href="#equipe" class="nav-link">Equipe</a>
+        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="#contato" class="nav-link">Localização</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#agendamento" class="btn btn-primary magnetic-btn" data-strength="20">
+          <span>Agendar Avaliação</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="#especialidades" class="mobile-link">Especialidades</a>
+      <a href="#sobre" class="mobile-link">A Clínica</a>
+      <a href="#equipe" class="mobile-link">Equipe</a>
+      <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+      <a href="#contato" class="mobile-link">Localização</a>
+      <a href="#agendamento" class="btn btn-primary mobile-cta">Agendar pelo WhatsApp</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- 2. SEÇÃO HERO -->
+    <section class="hero" id="inicio">
+      <!-- Partículas e Brilhos Animados no Fundo -->
+      <canvas id="heroParticles" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Elementos Odontológicos Flutuantes 3D com Parallax -->
+      <div class="floating-stage" aria-hidden="true">
+        <!-- Dente 3D Estilizado -->
+        <div class="float-item item-tooth" data-depth="0.06">
+          <div class="glass-orb">
+            <svg viewBox="0 0 64 64" fill="none">
+              <defs>
+                <linearGradient id="toothGrad" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#FFFFFF"/>
+                  <stop offset="60%" stop-color="#E2E8F0"/>
+                  <stop offset="100%" stop-color="#93C5FD"/>
+                </linearGradient>
+              </defs>
+              <path d="M21 10C14.5 10 10 15.2 10 22.5C10 31.5 14.2 39.5 17.5 50.2C18.9 54.8 23.2 55.2 25.2 50.8L29.8 39.8C30.8 37.5 33.2 37.5 34.2 39.8L38.8 50.8C40.8 55.2 45.1 54.8 46.5 50.2C49.8 39.5 54 31.5 54 22.5C54 15.2 49.5 10 43 10C38.5 10 35.2 12.5 32 12.5C28.8 12.5 25.5 10 21 10Z" fill="url(#toothGrad)" stroke="#3B82F6" stroke-width="1.5"/>
+              <path d="M18 19C20.5 16.5 24 16.5 26.5 18" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Espelho Odontológico -->
+        <div class="float-item item-mirror" data-depth="-0.05">
+          <div class="glass-orb orb-sm">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="40" cy="24" r="14" fill="#DBEAFE" stroke="#102A43" stroke-width="2.2"/>
+              <circle cx="40" cy="24" r="10" fill="#FFFFFF" stroke="#3B82F6" stroke-width="1.5"/>
+              <path d="M35 19L43 27" stroke="#93C5FD" stroke-width="2" stroke-linecap="round"/>
+              <path d="M30 34L12 52" stroke="#102A43" stroke-width="3.5" stroke-linecap="round"/>
+              <path d="M24 40L15 49" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Escova / Alinhador Tecnológico -->
+        <div class="float-item item-brush" data-depth="0.08">
+          <div class="glass-orb orb-sm">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M14 50L44 20" stroke="#102A43" stroke-width="3.5" stroke-linecap="round"/>
+              <rect x="39" y="11" width="14" height="8" rx="3" transform="rotate(-45 39 11)" fill="#3B82F6"/>
+              <path d="M36 16L40 20M39 13L43 17M42 10L46 14" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Brilho / Estrela Estética -->
+        <div class="float-item item-sparkle" data-depth="-0.04">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M20 2L23.5 16.5L38 20L23.5 23.5L20 38L16.5 23.5L2 20L16.5 16.5L20 2Z" fill="#3B82F6" fill-opacity="0.25" stroke="#3B82F6" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal-up">
+          <span class="eyebrow">ODONTOLOGIA DE ALTA PERFORMANCE</span>
+          <h1 class="hero-title">Seu sorriso merece o melhor cuidado</h1>
+          <p class="hero-description">
+            Unimos precisão digital, planejamento estético individualizado e acolhimento humano para transformar sua saúde bucal com previsibilidade e conforto.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#agendamento" class="btn btn-primary btn-lg magnetic-btn" data-strength="25">
+              <span>Agendar avaliação pelo WhatsApp</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#especialidades" class="btn btn-ghost">Conhecer tratamentos</a>
+          </div>
+          <div class="hero-badges">
+            <span class="pill-badge">Escaneamento Intraoral 3D</span>
+            <span class="pill-badge">Atendimento Humanizado</span>
+            <span class="pill-badge">Planejamento Digital</span>
+          </div>
+        </div>
+
+        <!-- Mosaico Visual Inspirado nas Referências -->
+        <div class="hero-mosaic reveal-scale">
+          <div class="mosaic-card mosaic-main">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=85" alt="Dentista analisando planejamento odontológico digital com paciente" loading="eager">
+          </div>
+          <div class="mosaic-card mosaic-sub-1">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=85" alt="Paciente sorrindo após avaliação estética dental" loading="eager">
+          </div>
+          <div class="mosaic-card mosaic-sub-2">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=85" alt="Consultório odontológico moderno e tecnológico" loading="eager">
+          </div>
+          <div class="floating-stat-card" data-depth="0.03">
+            <div class="stat-icon">✓</div>
+            <div>
+              <strong>99,4% de Satisfação</strong>
+              <span>Protocolos minimamente invasivos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA DE INDICADORES COM CONTAGEM ANIMADA -->
+    <section class="metrics-bar">
+      <div class="container metrics-grid">
+        <div class="metric-item reveal-up">
+          <div class="metric-number"><span class="counter" data-target="15">0</span>+</div>
+          <div class="metric-label">Anos de Excelência Clínica</div>
+        </div>
+        <div class="metric-item reveal-up" style="--delay: 0.1s">
+          <div class="metric-number"><span class="counter" data-target="4800">0</span>+</div>
+          <div class="metric-label">Sorrisos Transformados</div>
+        </div>
+        <div class="metric-item reveal-up" style="--delay: 0.2s">
+          <div class="metric-number"><span class="counter" data-target="100">0</span>%</div>
+          <div class="metric-label">Fluxo Digital 3D sem Moldagens</div>
+        </div>
+        <div class="metric-item reveal-up" style="--delay: 0.3s">
+          <div class="metric-number"><span class="counter" data-target="6">0</span></div>
+          <div class="metric-label">Especialidades Integradas</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ESPECIALIDADES (CARDS COM 3D TILT) -->
+    <section class="section specialties" id="especialidades">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="eyebrow">ESPECIALIDADES ODONTO PRIME</span>
+          <h2 class="section-title">Soluções completas para a saúde e estética do seu sorriso.</h2>
+          <p class="section-subtitle">
+            Cada caso possui necessidades próprias. Nossa avaliação integra diagnóstico por imagem de alta definição e planejamento personalizado.
+          </p>
+        </div>
+
+        <div class="specialties-grid">
+          <!-- Card 1: Implantes -->
+          <article class="specialty-card tilt-card reveal-up" data-specialty="Implantes Dentários">
+            <div class="tilt-glare"></div>
+            <div class="card-step">01</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M7 4h10l-1 6H8L7 4zM9 10v10l3-2 3 2V10M9 14h6M9 17h6"/>
+              </svg>
+            </div>
+            <h3>Implantes Dentários</h3>
+            <p>Reabilitação oral com implantes suíços de cicatrização rápida e cirurgia guiada por computador, sem cortes extensos.</p>
+            <button type="button" class="card-link select-treatment-btn" data-treatment="Implantes Dentários">
+              Agendar avaliação <span>→</span>
+            </button>
+          </article>
+
+          <!-- Card 2: Ortodontia -->
+          <article class="specialty-card tilt-card reveal-up" style="--delay: 0.08s" data-specialty="Ortodontia e Alinhadores">
+            <div class="tilt-glare"></div>
+            <div class="card-step">02</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 12c0-4 3.5-7 8-7s8 3 8 7-3.5 7-8 7-8-3-8-7z"/>
+                <path d="M7 12h10M10 9v6M14 9v6"/>
+              </svg>
+            </div>
+            <h3>Ortodontia</h3>
+            <p>Alinhadores invisíveis de última geração e aparelhos autoligados para crianças, adolescentes e adultos com previsibilidade 3D.</p>
+            <button type="button" class="card-link select-treatment-btn" data-treatment="Ortodontia">
+              Agendar avaliação <span>→</span>
+            </button>
+          </article>
+
+          <!-- Card 3: Clareamento -->
+          <article class="specialty-card tilt-card reveal-up" style="--delay: 0.16s" data-specialty="Clareamento Dental">
+            <div class="tilt-glare"></div>
+            <div class="card-step">03</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"/>
+              </svg>
+            </div>
+            <h3>Clareamento</h3>
+            <p>Protocolos a laser e supervisionados com dessensibilizantes avançados para devolver luminosidade natural sem desconforto.</p>
+            <button type="button" class="card-link select-treatment-btn" data-treatment="Clareamento Dental">
+              Agendar avaliação <span>→</span>
+            </button>
+          </article>
+
+          <!-- Card 4: Lentes Dentais -->
+          <article class="specialty-card tilt-card reveal-up" data-specialty="Lentes de Contato Dental">
+            <div class="tilt-glare"></div>
+            <div class="card-step">04</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M6 5c0-1.1.9-2 2-2h8a2 2 0 012 2v8c0 4.4-2.7 8-6 8s-6-3.6-6-8V5z"/>
+                <path d="M10 7h4"/>
+              </svg>
+            </div>
+            <h3>Lentes Dentais</h3>
+            <p>Laminados ultrafinos em porcelana desenhados digitalmente para harmonizar formato, proporção e textura dos dentes.</p>
+            <button type="button" class="card-link select-treatment-btn" data-treatment="Lentes Dentais">
+              Agendar avaliação <span>→</span>
+            </button>
+          </article>
+
+          <!-- Card 5: Endodontia -->
+          <article class="specialty-card tilt-card reveal-up" style="--delay: 0.08s" data-specialty="Endodontia Microscópica">
+            <div class="tilt-glare"></div>
+            <div class="card-step">05</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9"/>
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+              </svg>
+            </div>
+            <h3>Endodontia</h3>
+            <p>Tratamento de canal mecanizado em sessão única com localizador apical eletrônico e microscopia clínica de alta precisão.</p>
+            <button type="button" class="card-link select-treatment-btn" data-treatment="Endodontia">
+              Agendar avaliação <span>→</span>
+            </button>
+          </article>
+
+          <!-- Card 6: Harmonização Orofacial -->
+          <article class="specialty-card tilt-card reveal-up" style="--delay: 0.16s" data-specialty="Harmonização Orofacial">
+            <div class="tilt-glare"></div>
+            <div class="card-step">06</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+              </svg>
+            </div>
+            <h3>Harmonização Orofacial</h3>
+            <p>Equilíbrio estético e funcional da face com bioestimuladores de colágeno, toxina botulínica e preenchimentos sutis.</p>
+            <button type="button" class="card-link select-treatment-btn" data-treatment="Harmonização Orofacial">
+              Agendar avaliação <span>→</span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SOBRE A CLÍNICA E DIFERENCIAIS -->
+    <section class="section about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-media reveal-left">
+          <div class="about-photo-primary">
+            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=850&q=85" alt="Sala clínica da Odonto Prime equipada com tecnologia moderna" loading="lazy">
+          </div>
+          <div class="about-photo-secondary">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=500&q=85" alt="Atendimento humanizado e próximo ao paciente" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <span class="eyebrow">SOBRE A ODONTO PRIME</span>
+          <h2 class="section-title">Não existe uma única solução para todos os sorrisos.</h2>
+          <p class="about-text">
+            Projetamos cada detalhe da Odonto Prime para eliminar a ansiedade de ir ao dentista. Nosso ambiente combina arquitetura acolhedora, biossegurança rigorosa e equipamentos digitais de última geração.
+          </p>
+
+          <ul class="differentials-list">
+            <li>
+              <span class="check-badge">✓</span>
+              <div>
+                <strong>Diagnóstico Digital em Alta Definição</strong>
+                <span>Escaneamento 3D que permite visualizar o resultado antes mesmo de iniciar.</span>
+              </div>
+            </li>
+            <li>
+              <span class="check-badge">✓</span>
+              <div>
+                <strong>Conforto e Anestesia Sem Dor</strong>
+                <span>Técnicas computadorizadas e sedação consciente para total tranquilidade.</span>
+              </div>
+            </li>
+            <li>
+              <span class="check-badge">✓</span>
+              <div>
+                <strong>Planejamento Interdisciplinar</strong>
+                <span>Especialistas trabalhando em conjunto para resultados duradouros e naturais.</span>
+              </div>
+            </li>
+            <li>
+              <span class="check-badge">✓</span>
+              <div>
+                <strong>Biossegurança Hospitalar</strong>
+                <span>Central de esterilização automatizada e rastreável em todos os atendimentos.</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#agendamento" class="btn btn-primary magnetic-btn" data-strength="20">Conversar com a equipe</a>
+        </div>
+      </div>
+
+      <!-- Fluxo de Atendimento em 4 Passos (Inspirado na Referência 3) -->
+      <div class="container process-wrapper">
+        <div class="process-grid">
+          <div class="process-card reveal-up">
+            <span class="step-pill">01</span>
+            <h4>Avaliação</h4>
+            <p>Escuta ativa, exames digitais e análise completa da saúde bucal.</p>
+          </div>
+          <div class="process-card reveal-up" style="--delay: 0.1s">
+            <span class="step-pill">02</span>
+            <h4>Planejamento</h4>
+            <p>Definição transparente das etapas, prazos e possibilidades clínicas.</p>
+          </div>
+          <div class="process-card reveal-up" style="--delay: 0.2s">
+            <span class="step-pill">03</span>
+            <h4>Tratamento</h4>
+            <p>Execução precisa com materiais importados e máximo conforto.</p>
+          </div>
+          <div class="process-card reveal-up" style="--delay: 0.3s">
+            <span class="step-pill">04</span>
+            <h4>Acompanhamento</h4>
+            <p>Manutenção preventiva periódica para preservar seu sorriso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EQUIPE DE PROFISSIONAIS (CARDS INTERATIVOS) -->
+    <section class="section team-section" id="equipe">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="eyebrow">CORPO CLÍNICO</span>
+          <h2 class="section-title">Especialistas dedicados ao seu bem-estar.</h2>
+          <p class="section-subtitle">
+            Profissionais em constante atualização científica para oferecer tratamentos seguros, éticos e personalizados.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Profissional 1 -->
+          <div class="team-card reveal-up">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=85" alt="Dr. Rafael Monteiro" loading="lazy">
+              <div class="team-overlay">
+                <p>Mestre em Implantodontia e Reabilitação Oral Digital. Mais de 2.000 implantes realizados com cirurgia guiada.</p>
+                <span class="cro-tag">CRO-SP 98.412</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Dr. Rafael Monteiro</h3>
+              <span>Diretor Clínico • Implantodontia</span>
+            </div>
+          </div>
+
+          <!-- Profissional 2 -->
+          <div class="team-card reveal-up" style="--delay: 0.1s">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=85" alt="Dra. Camila Vasconcelos" loading="lazy">
+              <div class="team-overlay">
+                <p>Especialista em Ortodontia Digital e Alinhadores Invisíveis para adultos, adolescentes e ortopedia infantil.</p>
+                <span class="cro-tag">CRO-SP 104.889</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Dra. Camila Vasconcelos</h3>
+              <span>Ortodontia & Alinhadores</span>
+            </div>
+          </div>
+
+          <!-- Profissional 3 -->
+          <div class="team-card reveal-up" style="--delay: 0.2s">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=85" alt="Dra. Beatriz Almeida" loading="lazy">
+              <div class="team-overlay">
+                <p>Especialista em Dentística Restauradora, Lentes de Contato Dental em Porcelana e Harmonização Orofacial.</p>
+                <span class="cro-tag">CRO-SP 112.305</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Dra. Beatriz Almeida</h3>
+              <span>Estética Dental & Harmonização</span>
+            </div>
+          </div>
+
+          <!-- Profissional 4 -->
+          <div class="team-card reveal-up" style="--delay: 0.3s">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=85" alt="Dr. Lucas Andrade" loading="lazy">
+              <div class="team-overlay">
+                <p>Especialista em Endodontia Microscópica e Microcirurgia Perirradicular com foco em atendimento sem dor.</p>
+                <span class="cro-tag">CRO-SP 109.740</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Dr. Lucas Andrade</h3>
+              <span>Endodontia Microscópica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. DEPOIMENTOS E DÚVIDAS FREQUENTES -->
+    <section class="section testimonials-section" id="depoimentos">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="eyebrow">EXPERIÊNCIAS REAIS</span>
+          <h2 class="section-title">A confiança de quem já transformou o sorriso conosco.</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card reveal-up">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p>"Sempre tive receio de tratamentos dentários, mas na Odonto Prime fui acolhida desde a recepção. Fiz minhas lentes dentais e o resultado ficou extremamente natural."</p>
+            <footer>
+              <div class="avatar-initials">MC</div>
+              <div>
+                <strong>Mariana Costa</strong>
+                <span>Lentes de Contato Dental</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-up" style="--delay: 0.1s">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p>"O escaneamento 3D mostrou exatamente como meu sorriso ficaria com os alinhadores invisíveis. Tratamento rápido, organizado e com horários pontuais."</p>
+            <footer>
+              <div class="avatar-initials">RS</div>
+              <div>
+                <strong>Rodrigo Silveira</strong>
+                <span>Ortodontia Digital</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-up" style="--delay: 0.2s">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p>"Realizei dois implantes com o Dr. Rafael e a recuperação foi surpreendentemente tranquila. Estrutura impecável e equipe extremamente atenciosa."</p>
+            <footer>
+              <div class="avatar-initials">HL</div>
+              <div>
+                <strong>Helena Lacerda</strong>
+                <span>Implantes Dentários</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+
+        <!-- Acordeão FAQ (Inspirado na Referência 5) -->
+        <div class="faq-layout reveal-up">
+          <div class="faq-intro">
+            <span class="eyebrow">DÚVIDAS FREQUENTES</span>
+            <h3>Informação clara antes da sua avaliação.</h3>
+            <p>As respostas são gerais. A indicação ideal de tratamento depende de avaliação profissional individualizada.</p>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Como funciona a primeira consulta de avaliação?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Na primeira consulta realizamos uma conversa detalhada sobre seus objetivos, exame clínico completo e escaneamento digital para apresentar um plano de tratamento claro e transparente.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>A clínica trabalha com alinhadores invisíveis e aparelho fixo?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Sim. Trabalhamos tanto com alinhadores transparentes de alta tecnologia quanto com aparelhos autoligados estéticos e metálicos, indicando a melhor opção para cada caso.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>O clareamento dental causa sensibilidade?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Utilizamos protocolos modernos associados a dessensibilizantes e laserterapia, minimizando significativamente qualquer sensibilidade durante e após o procedimento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SEÇÃO DE AGENDAMENTO (BANNER AZUL-MARINHO + FORMULÁRIO FUNCIONAL WHATSAPP) -->
+    <section class="section booking-section" id="agendamento">
+      <div class="container">
+        <div class="booking-card reveal-scale">
+          <div class="booking-info">
+            <span class="eyebrow eyebrow-light">AGENDAMENTO ONLINE</span>
+            <h2>Quer entender o que pode ser indicado para o seu caso?</h2>
+            <p>
+              Preencha os dados ao lado para iniciar sua conversa diretamente no WhatsApp da Odonto Prime com as informações já organizadas para nossa equipe.
+            </p>
+            <div class="booking-highlights">
+              <div class="bh-item">
+                <span>⚡</span> Resposta rápida em horário comercial
+              </div>
+              <div class="bh-item">
+                <span>📅</span> Flexibilidade de horários para sua rotina
+              </div>
+              <div class="bh-item">
+                <span>🛡️</span> Atendimento particular e reembolso assistido
+              </div>
+            </div>
+          </div>
+
+          <form class="booking-form" id="bookingForm" novalidate>
+            <div class="form-group">
+              <label for="patientName">Nome completo *</label>
+              <input type="text" id="patientName" name="patientName" placeholder="Ex: Ana Paula Ferreira" required>
+              <small class="error-msg" id="nameError"></small>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="patientPhone">WhatsApp / Telefone *</label>
+                <input type="tel" id="patientPhone" name="patientPhone" placeholder="(11) 99999-9999" required>
+                <small class="error-msg" id="phoneError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="treatmentSelect">Especialidade desejada *</label>
+                <select id="treatmentSelect" name="treatmentSelect" required>
+                  <option value="">Selecione...</option>
+                  <option value="Avaliação Geral">Avaliação Geral / Check-up</option>
+                  <option value="Implantes Dentários">Implantes Dentários</option>
+                  <option value="Ortodontia">Ortodontia / Alinhadores</option>
+                  <option value="Clareamento Dental">Clareamento Dental</option>
+                  <option value="Lentes Dentais">Lentes de Contato Dental</option>
+                  <option value="Endodontia">Endodontia (Canal)</option>
+                  <option value="Harmonização Orofacial">Harmonização Orofacial</option>
+                </select>
+                <small class="error-msg" id="treatmentError"></small>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferredPeriod">Período de preferência</label>
+                <select id="preferredPeriod" name="preferredPeriod">
+                  <option value="Manhã (08h às 12h)">Manhã (08h às 12h)</option>
+                  <option value="Tarde (13h às 18h)">Tarde (13h às 18h)</option>
+                  <option value="Noite (18h às 20h)">Noite (18h às 20h)</option>
+                  <option value="Sábado (08h às 12h)">Sábado (08h às 12h)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredDate">Data sugerida (opcional)</label>
+                <input type="date" id="preferredDate" name="preferredDate">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="patientNotes">Observações (opcional)</label>
+              <textarea id="patientNotes" name="patientNotes" rows="2" placeholder="Conte brevemente o que você gostaria de avaliar..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-white btn-block magnetic-btn" data-strength="15">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.473 1.332 4.988L2 22l5.188-1.359a9.927 9.927 0 004.843 1.258h.004c5.515 0 9.969-4.454 9.969-9.969A9.93 9.93 0 0019.08 4.92 9.91 9.91 0 0012.031 2zm5.822 14.262c-.246.692-1.428 1.324-1.988 1.408-.51.076-1.156.109-1.867-.117-.432-.137-.986-.32-1.695-.626-2.981-1.287-4.928-4.293-5.077-4.492-.148-.199-1.213-1.613-1.213-3.078 0-1.465.768-2.185 1.04-2.482.273-.297.596-.371.795-.371.199 0 .398.002.572.01.183.009.429-.07.671.512.248.596.843 2.058.917 2.207.075.149.124.323.025.522-.099.199-.149.323-.298.497-.149.174-.313.388-.447.522-.149.149-.304.311-.131.609.174.298.772 1.274 1.658 2.063 1.139 1.015 2.099 1.33 2.397 1.479.298.149.472.124.646-.075.174-.199.745-.869.944-1.167.199-.298.398-.248.671-.149.273.099 1.738.82 2.036.969.298.149.497.223.571.348.075.124.075.72-.171 1.412z"/>
+              </svg>
+              <span>Enviar e Agendar no WhatsApp</span>
+            </button>
+            <p class="form-feedback" id="formFeedback" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTATO, HORÁRIOS E MAPA (INSPIRADO NA REFERÊNCIA 4) -->
+    <section class="section contact-section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-details reveal-left">
+          <span class="eyebrow">LOCALIZAÇÃO E HORÁRIOS</span>
+          <h2 class="section-title">Cuidado odontológico perto de você.</h2>
+          <p class="contact-lead">
+            A Odonto Prime está localizada em região de fácil acesso, com estacionamento conveniado e estrutura completa de acessibilidade.
+          </p>
+
+          <div class="address-box">
+            <strong>Unidade Jardins — Odonto Prime</strong>
+            <p>Av. Paulista, 1842 — Conjunto 1402, Bela Vista • São Paulo/SP • CEP 01310-200</p>
+            <p class="contact-phones">
+              <span>WhatsApp: (11) 99876-5432</span> • <span>Fixo: (11) 3254-8900</span>
+            </p>
+          </div>
+
+          <div class="hours-table">
+            <div class="hours-row"><span>Segunda-feira</span><span>08:00 – 19:00</span></div>
+            <div class="hours-row"><span>Terça-feira</span><span>08:00 – 20:00</span></div>
+            <div class="hours-row"><span>Quarta-feira</span><span>08:00 – 19:00</span></div>
+            <div class="hours-row"><span>Quinta-feira</span><span>08:00 – 20:00</span></div>
+            <div class="hours-row"><span>Sexta-feira</span><span>08:00 – 18:00</span></div>
+            <div class="hours-row"><span>Sábado</span><span>08:00 – 13:00</span></div>
+            <div class="hours-row closed"><span>Domingo</span><span>Fechado</span></div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="https://maps.google.com/?q=Av.+Paulista,+1842+-+Bela+Vista,+Sao+Paulo+-+SP" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              Como chegar
+            </a>
+            <a href="https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Odonto%20Prime." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="map-wrapper reveal-right">
+          <iframe 
+            title="Mapa de localização da Odonto Prime na Avenida Paulista"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-46.6620%2C-23.5645%2C-46.6520%2C-23.5585&layer=mapnik&marker=-23.5614%2C-46.6565" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. FOOTER COMPLETO -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo logo-light">
+          <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.5 6C8.5 6 5.5 9.2 5.5 13.8C5.5 19.5 8.2 24.5 10.2 31.2C11.1 34.2 13.8 34.5 15.1 31.6L18.2 24.5C19 22.8 21 22.8 21.8 24.5L24.9 31.6C26.2 34.5 28.9 34.2 29.8 31.2C31.8 24.5 34.5 19.5 34.5 13.8C34.5 9.2 31.5 6 27.5 6C24.5 6 22.2 7.6 20 7.6C17.8 7.6 15.5 6 12.5 6Z" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 12.5C13.5 11.2 15.8 11.2 17.5 12.2" stroke="#3B82F6" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-title">ODONTO</span>
+            <span class="logo-subtitle">PRIME</span>
+          </div>
+        </a>
+        <p>Odontologia próxima, humana e de alta precisão tecnológica. Responsável Técnico: Dr. Rafael Monteiro • CRO-SP 98.412.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5511998765432" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 99876-5432</a></li>
+          <li><a href="tel:+551132548900">Telefone: (11) 3254-8900</a></li>
+          <li><a href="mailto:contato@odontoprime.com.br">contato@odontoprime.com.br</a></li>
+          <li>@odontoprime.clinica</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Especialidades</h4>
+        <ul>
+          <li><a href="#especialidades">Implantes Dentários</a></li>
+          <li><a href="#especialidades">Ortodontia Digital</a></li>
+          <li><a href="#especialidades">Lentes de Contato Dental</a></li>
+          <li><a href="#especialidades">Clareamento a Laser</a></li>
+          <li><a href="#especialidades">Harmonização Orofacial</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Endereço</h4>
+        <p>Av. Paulista, 1842 — Conj. 1402<br>Bela Vista, São Paulo/SP<br>CEP 01310-200</p>
+        <a href="https://maps.google.com/?q=Av.+Paulista,+1842+-+Bela+Vista,+Sao+Paulo+-+SP" target="_blank" rel="noopener noreferrer" class="footer-map-link">Abrir no mapa →</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Odonto Prime Clínica Odontológica Ltda. Todos os direitos reservados.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+  <a href="https://wa.me/5511998765432?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Odonto%20Prime%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Falar com a Odonto Prime pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.473 1.332 4.988L2 22l5.188-1.359a9.927 9.927 0 004.843 1.258h.004c5.515 0 9.969-4.454 9.969-9.969A9.93 9.93 0 0019.08 4.92 9.91 9.91 0 0012.031 2zm5.822 14.262c-.246.692-1.428 1.324-1.988 1.408-.51.076-1.156.109-1.867-.117-.432-.137-.986-.32-1.695-.626-2.981-1.287-4.928-4.293-5.077-4.492-.148-.199-1.213-1.613-1.213-3.078 0-1.465.768-2.185 1.04-2.482.273-.297.596-.371.795-.371.199 0 .398.002.572.01.183.009.429-.07.671.512.248.596.843 2.058.917 2.207.075.149.124.323.025.522-.099.199-.149.323-.298.497-.149.174-.313.388-.447.522-.149.149-.304.311-.131.609.174.298.772 1.274 1.658 2.063 1.139 1.015 2.099 1.33 2.397 1.479.298.149.472.124.646-.075.174-.199.745-.869.944-1.167.199-.298.398-.248.671-.149.273.099 1.738.82 2.036.969.298.149.497.223.571.348.075.124.075.72-.171 1.412z"/>
+    </svg>
+    <span class="whatsapp-tooltip">Agende pelo WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
